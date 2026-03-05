@@ -2,10 +2,10 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "CyberDash",
+    title: "Trimline Group",
     description: "Real-time analytics dashboard with interactive data visualizations and AI-powered insights.",
-    tags: ["React", "D3.js", "Node.js", "WebSocket"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    tags: ["React", "Tailwind CSS", "Formspree API", "Google Analytics"],
+    image: "Trimline.png",
   },
   {
     title: "NeonChat",
@@ -52,10 +52,10 @@ const ProjectsSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a href="#" className="p-2 glass rounded-full text-primary hover:neon-box transition-all">
+                  <a href="https://github.com/UMAR-25-UMR/Trimline-react-app-by-umar" className="p-2 glass rounded-full text-primary hover:neon-box transition-all">
                     <Github size={16} />
                   </a>
-                  <a href="#" className="p-2 glass rounded-full text-primary hover:neon-box transition-all">
+                  <a href="https://trimline-react-app-by-umar.vercel.app/" className="p-2 glass rounded-full text-primary hover:neon-box transition-all">
                     <ExternalLink size={16} />
                   </a>
                 </div>

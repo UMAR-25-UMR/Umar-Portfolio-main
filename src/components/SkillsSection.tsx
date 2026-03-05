@@ -1,18 +1,20 @@
 const skills = [
-  { name: "React / Next.js", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Python", level: 80 },
-  { name: "PostgreSQL", level: 85 },
-  { name: "Tailwind CSS", level: 95 },
-  { name: "Docker", level: 75 },
-  { name: "AWS / Cloud", level: 70 },
+  { name: "HTML", level: 90 },
+  { name: "CSS", level: 85 },
+  { name: "JavaScript", level: 70 },
+  { name: "React", level: 50 },
+  { name: "TypeScript", level: 40 },
+  { name: "Python", level: 40 },
+  { name: "SQL", level: 60 },
+  { name: "Tailwind CSS", level: 75 },
+  // { name: "Node.js", level: 85 },
+  // { name: "Docker", level: 75 },
+  // { name: "AWS / Cloud", level: 70 },
 ];
 
 const techStack = [
-  "React", "Next.js", "TypeScript", "Node.js", "Python", "PostgreSQL",
-  "MongoDB", "Redis", "Docker", "Kubernetes", "AWS", "Tailwind CSS",
-  "GraphQL", "REST APIs", "Git", "CI/CD", "Figma", "Linux"
+  "React", "TypeScript", "Python", "SQL", "HTML", "Tailwind CSS",
+  "CSS", "JavaScript", "APIs", "Git", "GitHub", "Figma",
 ];
 
 const SkillsSection = () => {

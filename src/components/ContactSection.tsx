@@ -7,7 +7,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // placeholder
-    alert("Message sent! (This is a demo)");
+    alert("Message sent!");
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -27,11 +27,11 @@ const ContactSection = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
-                <span className="font-mono text-sm">hello@johndoe.dev</span>
+                <span className="font-mono text-sm">umarimran2504@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
-                <span className="font-mono text-sm">San Francisco, CA</span>
+                <span className="font-mono text-sm">Karachi, Pakistan</span>
               </div>
             </div>
           </div>

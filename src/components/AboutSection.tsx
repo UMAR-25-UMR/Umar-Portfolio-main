@@ -2,9 +2,9 @@ import { Code2, Palette, Server } from "lucide-react";
 
 const AboutSection = () => {
   const highlights = [
-    { icon: Code2, title: "Frontend", desc: "React, TypeScript, Next.js, Tailwind CSS" },
-    { icon: Server, title: "Backend", desc: "Node.js, Python, PostgreSQL, REST/GraphQL" },
-    { icon: Palette, title: "Design", desc: "Figma, Motion Design, UI/UX Systems" },
+    { icon: Code2, title: "Frontend", desc: "React, TypeScript, Tailwind CSS, JavaScript, CSS, HTML" },
+    { icon: Server, title: "Backend", desc: "SQL, Python, APIs" },
+    { icon: Palette, title: "Design", desc: "Figma, UI/UX Design" },
   ];
 
   return (
@@ -18,22 +18,22 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg font-body text-foreground/80 leading-relaxed">
-              I'm a passionate full-stack developer with <span className="text-primary font-semibold">5+ years</span> of experience crafting high-performance web applications. I specialize in building pixel-perfect, accessible interfaces with clean, maintainable code.
+              I'm a passionate full-stack developer with <span className="text-primary font-semibold">1+ years</span> of experience crafting high-performance web applications. I specialize in building pixel-perfect, accessible interfaces with clean, maintainable code.
             </p>
             <p className="text-lg font-body text-muted-foreground leading-relaxed">
               When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, and pushing the boundaries of what's possible on the web.
             </p>
             <div className="flex gap-6 pt-4">
               <div className="text-center">
-                <div className="text-3xl font-display font-bold neon-text">50+</div>
+                <div className="text-3xl font-display font-bold neon-text">10+</div>
                 <div className="text-sm text-muted-foreground font-mono">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-display font-bold neon-text-cyan">30+</div>
+                <div className="text-3xl font-display font-bold neon-text-cyan">2+</div>
                 <div className="text-sm text-muted-foreground font-mono">Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-display font-bold neon-text">5+</div>
+                <div className="text-3xl font-display font-bold neon-text">1+</div>
                 <div className="text-sm text-muted-foreground font-mono">Years</div>
               </div>
             </div>
