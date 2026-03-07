@@ -2,13 +2,30 @@ import { Mail, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // placeholder
-    alert("Message sent!");
-    setFormData({ name: "", email: "", message: "" });
+
+    const response = await fetch("https://formspree.io/f/mandgbzq", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      alert("Something went wrong. Try again.");
+    }
   };
 
   return (
@@ -17,6 +34,7 @@ const ContactSection = () => {
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-center mb-4 neon-text">
           CONTACT
         </h2>
+
         <div className="h-[2px] w-16 mx-auto gradient-neon rounded-full mb-12" />
 
         <div className="grid md:grid-cols-5 gap-8">
@@ -24,11 +42,15 @@ const ContactSection = () => {
             <p className="text-foreground/80 font-body text-lg leading-relaxed">
               Have a project in mind? Let's build something extraordinary together.
             </p>
+
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={18} className="text-primary" />
-                <span className="font-mono text-sm">umarimran2504@gmail.com</span>
+                <span className="font-mono text-sm">
+                  umarimran2504@gmail.com
+                </span>
               </div>
+
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
                 <span className="font-mono text-sm">Karachi, Pakistan</span>
@@ -39,31 +61,43 @@ const ContactSection = () => {
           <form onSubmit={handleSubmit} className="md:col-span-3 space-y-4">
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               required
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-sm font-body text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:neon-border transition-all duration-300"
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-sm"
             />
+
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               required
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-sm font-body text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:neon-border transition-all duration-300"
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-sm"
             />
+
             <textarea
+              name="message"
               placeholder="Your Message"
               rows={5}
               required
               value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-sm font-body text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 focus:neon-border transition-all duration-300 resize-none"
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+              className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-sm resize-none"
             />
+
             <button
               type="submit"
-              className="w-full py-3 gradient-neon rounded-sm font-display text-sm tracking-widest uppercase text-background font-bold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2"
+              className="w-full py-3 gradient-neon rounded-sm flex items-center justify-center gap-2"
             >
               <Send size={16} />
               Send Message
