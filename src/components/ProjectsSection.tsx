@@ -37,7 +37,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
     github: "https://github.com/UMAR-25-UMR/Horizon-Foods-by-Umar",
-    live: "https://vaultos.vercel.app/",
+    live: "https://horizon-foods-by-umar.netlify.app/",
   },
   {
     title: "Masjid Darussalam Website",
