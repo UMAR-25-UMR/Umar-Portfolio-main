@@ -32,10 +32,10 @@ const projects = [
   {
     title: "Horizon Foods",
     description:
-      "Secure password manager with biometric authentication and encrypted storage.",
-    tags: ["React Native", "Rust", "SQLite", "E2EE"],
+      "A responsive corporate food brand website built to showcase frozen food products, company services, and contact information. Designed with modern UI sections, product highlights, and structured navigation to simulate a professional food manufacturing brand website.",
+    tags: ["HTML", "CSS", "JavaScript"],
     image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+      "Horizon Foods.png",
     github: "https://github.com/UMAR-25-UMR/Horizon-Foods-by-Umar",
     live: "https://horizon-foods-by-umar.netlify.app/",
   },
