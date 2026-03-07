@@ -30,13 +30,13 @@ const projects = [
     live: "https://masjid-darussalam.vercel.app/",
   },
   {
-    title: "VaultOS",
+    title: "Horizon Foods",
     description:
       "Secure password manager with biometric authentication and encrypted storage.",
     tags: ["React Native", "Rust", "SQLite", "E2EE"],
     image:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-    github: "https://github.com/UMAR-25-UMR/vaultos",
+    github: "https://github.com/UMAR-25-UMR/Horizon-Foods-by-Umar",
     live: "https://vaultos.vercel.app/",
   },
   {
